@@ -1,0 +1,116 @@
+/****TAG SELECTOR****/
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Caprasimo', sans-serif;
+    color: white;
+    background-color: white;
+}
+
+h1, h2, h3, p, strong {
+    font-family: 'Caprasimo', sans-serif;
+    color: #006a36;
+}
+
+a {
+    font-family: 'Caprasimo', sans-serif;
+    display: inline-block;
+    color: #11999E;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #32a800;
+}
+
+.btn {
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: 'Caprasimo', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    background: #32a800;
+    padding: 10px 20px 10px 20px;
+    margin: 20px auto 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #006a36;
+    background-image: -webkit-linear-gradient(top, #32a800, #006a36);
+    background-image: -moz-linear-gradient(top, #32a800, #006a36);
+    background-image: -ms-linear-gradient(top, #32a800, #006a36);
+    background-image: -o-linear-gradient(top, #32a800, #006a36);
+    background-image: linear-gradient(to bottom, #32a800, #006a36);
+    text-decoration: none;
+}
+
+/****CLASS SELECTOR****/
+
+.middle-container {
+    margin: 5% 5%;
+}
+
+/* CONTENT TO DISPLAY */
+
+.script-container {
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.col {
+    margin: 2% 1%;
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    box-shadow: 0px 0px 10px 1px #8fc73f;
+}
+
+@keyframes example {
+    0% {
+        top: 300px;
+        bottom: 500px;
+        filter: blur(5px)
+    }
+
+    100% {
+        top: 0px;
+        bottom: 0px;
+        filter: blur(0)
+    }
+}
+
+.script-title {
+    padding: 0;
+    text-align: left;
+}
+
+.script-content {
+    text-align: middle;
+}
+
+.custom-container {
+  display: flex;
+  width: 100vw; /* Full width */
+  min-height: 100vh;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.left, .right {
+  padding: 20px;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+  
